@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -U | awk '!/^\./{print $0} /^\./{print $0}' | sort -f | awk '{ printf "%s,\n", $0 }' | sed '$ s/,$/'
